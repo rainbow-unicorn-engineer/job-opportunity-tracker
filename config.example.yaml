@@ -1,0 +1,42 @@
+# Copy to config.yaml and add your API keys. config.yaml is gitignored.
+search:
+  titles_preferred:
+    - Software Engineer
+    - Software Engineer II
+    - Software Engineer III
+    - Senior Software Engineer
+    - Full Stack Engineer
+    - Senior Full Stack Engineer
+    - AI Engineer
+    - Applied AI Engineer
+    - LLM Engineer
+    - Agent Engineer
+    - Platform Engineer
+    - Forward Deployed Engineer
+  titles_acceptable:            # captured and scored, ranked below preferred
+    - Frontend Engineer
+    - Backend Engineer
+    - Solutions Architect
+    - Solutions Engineer
+    - Data Engineer
+  titles_excluded: [ML Research, Data Scientist, QA, Sales Engineer]
+  levels: [mid, senior]         # Engineer II and up (strong I with senior scope OK)
+  locations: ["Dallas, TX", ""] # "" = remote/national query
+  work_modes: [remote, hybrid, onsite]
+  relocation: true
+  relocation_scope: anywhere    # US, any city, for the right role
+  salary_floor: 100000
+  salary_target: 110000
+  exclude: [contract, c2c, corp-to-corp, "1099", clearance, "security clearance", ts/sci]
+sources:
+  adzuna:  { app_id: "", app_key: "" }
+  jsearch: { api_key: "" }
+  jooble:  { api_key: "" }
+polling:
+  aggregator_interval_hours: 24
+  ats_interval_hours: 24
+  ghosted_after_days: 21
+  stale_after_days: 45
+gmail:
+  label: "JobSearch"
+  enabled: false

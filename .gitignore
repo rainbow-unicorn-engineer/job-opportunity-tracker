@@ -1,0 +1,6 @@
+config.yaml
+jobtracker.db
+__pycache__/
+*.pyc
+.venv/
+archive/resumes/
