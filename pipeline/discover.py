@@ -37,8 +37,8 @@ def gather(cfg: dict) -> list[Posting]:
                     print(f"[adzuna] {title!r}/{loc!r} failed: {e}")
 
     js = src.get("jsearch", {})
-    if js.get("api_key") or js.get("rapidapi_key"):
-        jsearch_key = js.get("api_key") or js.get("rapidapi_key")
+    if js.get("api_key"):
+        jsearch_key = js["api_key"]
         for title in titles:
             for loc in locations:
                 q = f"{title} in {loc}" if loc else title
