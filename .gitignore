@@ -4,3 +4,7 @@ __pycache__/
 *.pyc
 .venv/
 archive/resumes/
+
+# Personal material that must never reach the public repo: interview
+# prep, notes, drafts. Lives only on this PC.
+private/
